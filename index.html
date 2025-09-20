@@ -3,26 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My AWS Demo Website</title>
+  <title>My Modern Cloud Site</title>
   <style>
+    /* General styles */
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: #fff;
       text-align: center;
-      margin: 50px;
-      background-color: #f4f4f9;
-      color: #333;
+    }
+    header {
+      padding: 60px 20px;
     }
     h1 {
-      color: #2c3e50;
+      font-size: 3em;
+      margin-bottom: 10px;
     }
     p {
-      font-size: 18px;
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 12px 30px;
+      margin: 10px;
+      color: #6a11cb;
+      background-color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    a.button:hover {
+      background-color: #f0f0f0;
+    }
+    section {
+      padding: 50px 20px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .feature {
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+    }
+    footer {
+      padding: 20px;
+      font-size: 0.9em;
+      background: rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My AWS Demo Website í¾‰</h1>
-  <p>This page is running on <strong>GitHub Pages</strong> from my AWS instance.</p>
+  <header>
+    <h1>Cloud Skills Hub</h1>
+    <p>Learn cloud technologies and level up your career!</p>
+    <a href="#features" class="button">Explore Courses</a>
+    <a href="#signup" class="button">Sign Up</a>
+  </header>
+
+  <section id="features">
+    <h2>Our Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Interactive Labs</h3>
+        <p>Hands-on labs to practice cloud skills in real environments.</p>
+      </div>
+      <div class="feature">
+        <h3>Expert Tutorials</h3>
+        <p>Learn from top instructors in AWS, Azure, and GCP.</p>
+      </div>
+      <div class="feature">
+        <h3>Cert Prep</h3>
+        <p>Prepare for cloud certifications with guided lessons.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="signup">
+    <h2>Join Us Today</h2>
+    <p>Start your cloud journey now with our free trial!</p>
+    <a href="#" class="button">Get Started</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Cloud Skills Hub. All rights reserved.
+  </footer>
 </body>
 </html>
 
